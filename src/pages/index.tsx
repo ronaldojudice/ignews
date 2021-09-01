@@ -1,13 +1,20 @@
-import styles from '../../styles/home.module.scss'
+import styles from '../../styles/home.module.scss';
+import Head from 'next/head';
 
 
 export default function Home() {
-  return (
-    <div className={styles.title}>
-<h1> Manchester<span>United</span></h1>  
+  return ( 
+    <>
+    <Head>
+    <title>ig.news Home</title>
+    </Head>
 
-    </div>
+    <h1 className={styles.title}>Manchester<span>United</span>
+   
+    </h1>  
     
+    </>
+  
    
   )
 }

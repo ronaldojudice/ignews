@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root{
+
+  --white:#ffff;
+
+  --gray-100: #e1e1e6;
+  --gray-300:#a8a8b3;
+  --gray-900:#121214;
+
+  --cyan-500: #61dafb;
+
+  --yellow-500: #eba417;
+
+}
+body {
+
+}
+
+body,input,textarea,select,button,textarea {
+  font:400 1rem, "roboto", sans-serif;
+}
+
+button{
+  cursor: pointer;
+}
+a{
+  cikir:inherit;
+  text-decoration: none;
+}
