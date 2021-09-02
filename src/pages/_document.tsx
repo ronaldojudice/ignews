@@ -1,4 +1,5 @@
-import Document,{Html,Head,Main, NextScript} from 'next/document'
+/* eslint-disable @next/next/no-page-custom-font */
+import Document, { Html,Head,Main, NextScript } from 'next/Document'
 
 
 export default class MyDocument extends Document{

@@ -1,5 +1,5 @@
-import styles from '../../styles/home.module.scss';
 import Head from 'next/head';
+import styles from "../../styles/global.scss";
 
 
 export default function Home() {
@@ -9,9 +9,10 @@ export default function Home() {
     <title>ig.news Home</title>
     </Head>
 
-    <h1 className={styles.title}>Manchester<span>United</span>
-   
-    </h1>  
+   <h1 className={styles.title}>Home
+     <span>Manchester United</span>
+   </h1>   
+
     
     </>
   
