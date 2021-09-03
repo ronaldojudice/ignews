@@ -1,4 +1,6 @@
 import styles from './styles.module.scss';
+import Image from 'next/image';
+import logoIgnews from '../../../public/imagens/ignews.svg';
 
 
 /* eslint-disable @next/next/no-img-element */
@@ -6,14 +8,11 @@ export function Header(){
   return(
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
-        <img src="/public/imagens/ignews.svg" alt="ignews" />
+        <Image src={logoIgnews} alt="ignews" />
         <nav>
-          <a href="#">Home</a>
-          <a href="#">Posts</a>
-          <button className="SignIn">
-
-          </button>
-        </nav>
+          <a className={styles.active}>Home</a>
+          <a>Posts</a>
+          </nav>
       </div>
     </header>
   )

@@ -1,21 +1,11 @@
-import Head from 'next/head';
-import styles from "../../styles/global.scss";
-
+import React from "react";
+import { Header } from "../components/Header";
 
 export default function Home() {
   return ( 
-    <>
-    <Head>
-    <title>ig.news Home</title>
-    </Head>
-
-   <h1 className={styles.title}>Home
-     <span>Manchester United</span>
-   </h1>   
-
-    
-    </>
-  
+   <>
+      <title>igNews</title> 
+   </>
    
   )
 }
