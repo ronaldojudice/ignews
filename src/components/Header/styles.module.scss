@@ -2,7 +2,7 @@
   height:5rem;
   border-bottom:1px solid var(--gray-800);
   font-family: 'roboto';
-  font-size: 700;;
+  font-size: 700;
 }
 
 .headerContent{
@@ -28,9 +28,15 @@
     
 
     transition: color 0.2s;
-
+    & + a{
+        margin-left: 2rem;
+    }
     &:hover{
       color:var(--white);
+    }
+    &.active{
+      color:var(--white);
+      font-weight:bold;
     }
     &.active::after{
 
@@ -43,8 +49,12 @@
       left:0;
       background: var(--yellow-500);
       bottom:1px;
+       }
+
     }
-    
   }
-}
+  button{
+    margin-left:auto;
+
+  }
 }
