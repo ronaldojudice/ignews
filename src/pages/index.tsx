@@ -1,4 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
+import { SubscribeButton } from "../components/SubscribeButton";
 
 import styles from './home.module.scss';
 
@@ -11,20 +13,19 @@ export default function Home() {
 
 
     <main className={styles.contentContainer}>
-      <section>
-        <span> Hey Welcome</span>
-        <h1>News about the <span>React</span>  World</h1>
+      <section className={styles.hero}>
+        <span> Hey, Welcome</span>
+        <h1>News about <br />the<span> React</span>  World.</h1>
 
         <p>Get acess to all the publications <br/>
         <span>for $ 9.90 month</span>
-          </p>
+        </p>
+
+        <SubscribeButton/>
 
       </section>
-      <img src="/imagens/garotacodando.svg" alt="garota codando" />
-      
-     
-      
-          
+      <img src="/imagens/garotacodando.svg" alt="garota codando"/>  
+                
     </main>
 
    </>
