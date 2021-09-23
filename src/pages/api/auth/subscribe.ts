@@ -1,6 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { getSession, session } from "next-auth/client";
-import { stripe } from "../../../services/stripe";
+import { fauna } from "../../../services/fauna";
+
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default async (req:NextApiRequest, res:NextApiResponse)=>{
@@ -11,6 +12,10 @@ if(req.method === "POST"){
        email:session.user.email,
        //metadata
      })
+
+     await fauna.query(
+        q.
+     )
 
   const stripeCheckoutSession = await stripe.checkout.sessions.create({
     customer:stripeCustomer.id,

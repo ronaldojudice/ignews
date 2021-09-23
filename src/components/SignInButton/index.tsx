@@ -16,7 +16,7 @@ return session ?(
   > 
 
   <FaGithub color="#04d361" />
-  {session.user.email}
+  {session.user.name}
   <FiX color="#737380" className={styles.closeIcons} />
   </button>
 
